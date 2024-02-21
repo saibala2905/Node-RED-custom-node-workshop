@@ -1,0 +1,63 @@
+<script type="text/javascript">
+    RED.nodes.registerType('machine-data',{
+        category: 'function',
+        color: "#99ffe6",
+        defaults: {
+            name: {value:""},
+            machineType: {value:""},
+            machineModel: {value:""},
+            standardCycleTime: {value:""},
+            shiftDuration: {value:""},
+            analysis: {value:""},
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "database.gif",
+        label: function() {
+            return this.name || "machine-data"
+        }
+    });
+</script>
+<script type="text/html" data-template-name="machine-data">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-machineType"><i class="fa fa-tag"></i> Machine Type</label>
+        <select id="node-input-machineType" placeholder="Machine Type">
+            <option>IMM</option>,
+            <option>CNC</option>,
+            <option>Welding</option>,
+            <option>Extruder</option>,
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-machineModel"><i class="fa fa-tag"></i> Machine Model</label>
+        <input type="text" id="node-input-machineModel" placeholder="Machine Model">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-standardCycleTime"><i class="fa fa-tag"></i> Standard Cycle Time</label>
+        <input type="text" id="node-input-standardCycleTime" placeholder="Standard Cycle Time">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-shiftDuration"><i class="fa fa-tag"></i> Shift Duration</label>
+        <input type="text" id="node-input-shiftDuration" placeholder="Shift Duration">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-analysis"><i class="fa fa-tag"></i> Analysis</label>
+        <select id="node-input-analysis" multiple="multiple" style="width:100%;" placeholder="Select analysis types">
+            <option value="Efficiency">Efficiency</option>
+            <option value="Performance">Performance</option>
+            <option value="Quality">Quality</option>
+        </select>
+    </div>
+</script>
+<script type="text/html" data-help-name="machine-data">
+    <p>Node to analytics over streaming machine data.</p>
+</script>

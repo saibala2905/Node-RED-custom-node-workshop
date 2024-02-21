@@ -1,0 +1,17 @@
+{
+  "name": "node-red-contrib-custom-node-workshop",
+  "version": "1.0.0",
+  "description": "custom node for workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red" : {
+    "nodes": {
+      "lower-case": "lower-case/lower-case.js",
+      "machine-data": "machine-data/machine-data.js"
+    }
+  },
+  "author": "Saibala Sundram",
+  "license": "ISC"
+}
