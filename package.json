@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-custom-node-workshop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "custom node for workshop",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,8 @@
     "nodes": {
       "lower-case": "lower-case/lower-case.js",
       "machine-data": "machine-data/machine-data.js",
-      "lower-case-deva":"lower-case-deva/lower-case-deva.js"
+      "lower-case-saibala":"lower-case-saibala/lower-case-saibala.js",
+      "lower-case-deva":"lower-case-saibala/lower-case-deva.js",
     }
   },
   "author": "Saibala Sundram",
