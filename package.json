@@ -9,7 +9,8 @@
   "node-red" : {
     "nodes": {
       "lower-case": "lower-case/lower-case.js",
-      "machine-data": "machine-data/machine-data.js"
+      "machine-data": "machine-data/machine-data.js",
+      "lower-case-mayank":"lower-case-mayank/lower-case-mayank.js"
     }
   },
   "author": "Saibala Sundram",
