@@ -1,0 +1,30 @@
+<script type="text/javascript">
+    RED.nodes.registerType('lower-case-deva',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            dob: {value:""}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "file.svg",
+        label: function() {
+            return this.name||"lower-case-deva";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="lower-case-deva">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+
+        <label for="node-input-dob"><i class="fa fa-tag"></i> DOB</label>
+        <input type="text" id="node-input-dob" placeholder="DOB">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="lower-case-deva">
+    <p>A simple node that converts the message payloads into all lower-case-deva characters</p>
+</script>
