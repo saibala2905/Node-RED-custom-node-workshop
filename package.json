@@ -11,7 +11,7 @@
       "lower-case": "lower-case/lower-case.js",
       "machine-data": "machine-data/machine-data.js",
       "lower-case-saibala":"lower-case-saibala/lower-case-saibala.js",
-      "lower-case-deva:"lower-case-saibala/lower-case-deva.js",
+      "lower-case-deva":"lower-case-saibala/lower-case-deva.js",
     }
   },
   "author": "Saibala Sundram",
